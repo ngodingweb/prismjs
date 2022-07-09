@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.box-code {
+    width: 600px;
+    height: 400px;
+    /* background-color: black; */
+    margin-top: 30px;
+}
+
+pre.language-js, pre.language-html, pre.language-css {
+    background-color: rgb(31, 31, 61) !important;
+    width: 100%;
+    height: 100%;
+}
+
+pre.language-js::-webkit-scrollbar, pre.language-html::-webkit-scrollbar, pre.language-css::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+pre.language-js::-webkit-scrollbar-thumb, pre.language-html::-webkit-scrollbar-thumb, pre.language-css::-webkit-scrollbar-thumb {
+    background-color: rgb(52, 52, 110);
+}
+
+pre.language-js::-webkit-scrollbar-corner, pre.language-html::-webkit-scrollbar-corner, pre.language-css::-webkit-scrollbar-corner {
+    background-color: rgb(52, 52, 110);
+}
+
+@media screen and (max-width:614px) {
+    .box-code {
+        width: 97%;
+    }
+}

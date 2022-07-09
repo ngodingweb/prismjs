@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cara menggunakan prism js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism/prism.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box-code">
+            <pre>
+                <code class="language-js">
+const burgerBtn = document.querySelector(".burger-btn");
+burgerBtn.addEventListener("click", () => {
+    const burgerLineFirst = document.querySelector(".burger-line-first");
+    const burgerLineSecond = document.querySelector(".burger-line-second");
+    const burgerLineTh = document.querySelector(".burger-line-th");
+    const navResponsive = document.querySelector(".nav-responsive");
+
+    burgerLineFirst.classList.toggle("burger-line-first-rotage");
+    burgerLineSecond.classList.toggle("burger-line-second-translate");
+    burgerLineTh.classList.toggle("burger-line-th-rotage");
+    navResponsive.classList.toggle("nav-responsive-show");
+});
+                </code>
+            </pre>
+        </div>
+
+        <div class="box-code">
+            <pre>
+                <code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>Responsive Navbar&lt;/title>
+    &lt;link rel="stylesheet" href="style.css">
+&lt;/head>
+&lt;body>
+    &lt;header>
+        &lt;h1 class="logo">MHR CODE&lt;/h1>
+
+        &lt;nav>
+            &lt;ul>
+                &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Services&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Blog&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Works&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">About&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/nav>
+
+        &lt;div class="burger-btn">
+            &lt;div class="burger-line burger-line-first">&lt;/div>
+            &lt;div class="burger-line burger-line-second">&lt;/div>
+            &lt;div class="burger-line burger-line-th">&lt;/div>
+        &lt;/div>
+    &lt;/header>
+
+    &lt;div class="container">
+        &lt;div class="nav-responsive">
+            &lt;ul>
+                &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Services&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Blog&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Works&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">About&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+
+    &lt;script src="script.js">&lt;/script>
+    &lt;script src="https://kit.fontawesome.com/209072fbdb.js" crossorigin="anonymous">&lt;/script>
+&lt;/body>
+&lt;/html>                   
+                </code>
+            </pre>
+        </div>
+
+        <div class="box-code">
+            <pre>
+                <code class="language-css">
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+}
+
+/* header section */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7d7aff;
+    height: 50px;
+}
+
+/* nav section */
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover {
+    background-color: #ffffff80;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.burger-btn {
+    width: 40px;
+    height: 35px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <script src="prism/prism.js"></script>
+</body>
+</html>

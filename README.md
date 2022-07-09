@@ -1,0 +1,1 @@
+Pada tutorial kali ini saya membagikan cara menggunakan Prism Js, bukan hanya itu kita juga dapat mengubah warna temanya menjadi sesuai keinginan kita, untu tutorialnya bisa tonton di https://www.youtube.com/watch?v=bHSl5pB_wnw
